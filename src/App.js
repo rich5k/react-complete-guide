@@ -34,8 +34,10 @@ const app= props =>{
       <div className="App">
           <h1>Hi, I'm a React App</h1>
           <button onClick={switchNameHandler}>Switch Name</button>
-          <Person name={personsState.persons[0].name}/>
-          <Person name={personsState.persons[1].name}>My Hobby is gaming.</Person>
+          <Person 
+            name={personsState.persons[0].name}/>
+          <Person 
+            name={personsState.persons[1].name} click={switchNameHandler}>My Hobby is gaming.</Person>
       </div>
     );
 }
