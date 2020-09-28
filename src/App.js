@@ -6,11 +6,11 @@ import UserOutput from "./UserOutput/UserOutput"
 
 // Module 3 stuff
 const app= () =>{
-  const state={
+  const [state,setState]=useState({
     username: 'supermax'
-  }
+  });
  const usernameChangedHandler=(event)=> {
-    const setState={username:event.target.value};
+    setState({username:event.target.value});
  }
   return (
     <div className="App">
