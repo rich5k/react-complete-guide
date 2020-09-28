@@ -2,9 +2,23 @@ import React, { useState } from 'react';
 import './App.css';
 import Person from './Person/Person';
 import UserInput from "./UserInput/UserInput"
-import UserOutput from "./UserOutput/OutInput"
+import UserOutput from "./UserOutput/UserOutput"
 
 // Module 3 stuff
+const app= () =>{
+  const state={
+    username: 'supermax'
+  }
+  return (
+    <div className="App">
+      <UserInput />
+      <UserOutput userName={state.username}/>
+      <UserOutput userName={state.username}/>
+      <UserOutput userName={state.username}/>
+
+    </div>
+  );
+}
 // const app= props =>{
 //   const [personsState, setPersonsState]= useState({
     
