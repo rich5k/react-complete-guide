@@ -9,9 +9,12 @@ const app= () =>{
   const state={
     username: 'supermax'
   }
+ const usernameChangedHandler=(event)=> {
+    this.setState({username:event.target.value});
+ }
   return (
     <div className="App">
-      <UserInput />
+      <UserInput changed={usernameChangedHandler}/>
       <UserOutput userName={state.username}/>
       <UserOutput userName={state.username}/>
       <UserOutput userName={state.username}/>
